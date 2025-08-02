@@ -1,9 +1,6 @@
 n = int(input("Enter a number to sum even numbers up to: "))
-if n < 0:
-    print("We cannot calculate the factorial of a negative number")
-
-elif 0 <= n <= 1:
-    print (0)
+if n < 1:
+    print("In valid number. Please input a number over or equal than 1:")
 
 else:
     result = 0

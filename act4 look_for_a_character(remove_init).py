@@ -11,10 +11,24 @@ class StringManipulator:
 def main():
     name = StringManipulator()
     name.text = "example"
+   
+    while True:
+        user_input = input("Enter a word(letter only): ").strip()
 
-    print(name.find_character("e"))
-    print(name.measure_length())
-    print(name.convert_to_uppercase())
+        if not user_input:
+            print("Empty input. Please enter a valid word.")
+            continue
+        if not user_input.isalpha():
+            print("Invalid input. Letters only.")
+            continue
+
+        name.text = user_input
+        break
+
+
+    print("The first position of 'e'(index):", name.find_character("e"))
+    print("Word length:", name.measure_length())
+    print("Uppercase:", name.convert_to_uppercase())
 
 if __name__ == "__main__":
     main()

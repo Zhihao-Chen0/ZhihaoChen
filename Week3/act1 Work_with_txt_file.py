@@ -27,7 +27,7 @@ class file_handler:
 
 # main function
 def main():
-   file_path = "demo.txt"
+   file_path = "Week3/demo.txt"
    file_read_write = file_handler(file_path)
 
 # read file

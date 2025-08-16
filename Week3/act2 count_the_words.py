@@ -12,7 +12,7 @@ class FileHandler:
 
 # main function
 def main():
-    file_path = "demo.txt"
+    file_path = "Week3/demo.txt"
     count_word = FileHandler(file_path)
     print("Word count:", count_word.word_count())
 

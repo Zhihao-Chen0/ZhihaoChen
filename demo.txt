@@ -1,0 +1,3 @@
+This is some new content to write to the file.
+This is a new line added to the file.
+This is an appended line.

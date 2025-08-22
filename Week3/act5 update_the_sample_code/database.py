@@ -2,7 +2,7 @@ import sqlite3
 
 # Database setup
 def create_connection():
-    return sqlite3.connect("Week3/act5 update_the_sample_code/student.db")
+    return sqlite3.connect("student.db")
 
 # Create tables
 def create_table():

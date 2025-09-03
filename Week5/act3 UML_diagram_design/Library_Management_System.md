@@ -40,7 +40,7 @@ The system helps **librarians** and **members** by automating manual tasks, keep
 
 ![Use Case Diagram](Case_Diagram.png)
 
-### 👤 Actors
+### Actors
 
 - **Librarian**
   - Can add/edit/delete books, add members, manage fines, and view reports.

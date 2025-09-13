@@ -18,7 +18,7 @@ class Square(Shape):
     def draw(self) -> str:
         return "Drawing a Square"
 
-# Add Triangle shape   
+# act3part2 Add Triangle shape   
 class Triangle(Shape):
     def draw(self) -> str:
         return "Drawing a Triangle"
@@ -29,7 +29,7 @@ class ShapeFactory:
     _registry = {
         "circle": Circle,
         "square": Square,
-        "triangle": Triangle, # Register Triangle shape
+        "triangle": Triangle, # act3part2 Register Triangle shape
     }
 
     @classmethod
@@ -58,6 +58,9 @@ if __name__ == "__main__":
     square = factory.create("square")
     print(square.draw())  
 
-    # Create and draw a Triangle
+    #  act3part2 Create and draw a Triangle
     triangle = factory.create("triangle")
     print(triangle.draw())
+
+    # I add  a class Triangle and _registry it in ShapeFactory, last i create and draw a Triangle.And it run
+    # successfully.

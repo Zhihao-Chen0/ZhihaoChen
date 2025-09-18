@@ -61,6 +61,4 @@ if __name__ == "__main__":
     #  act3part2 Create and draw a Triangle
     triangle = factory.create("triangle")
     print(triangle.draw())
-
-    # I add  a class Triangle and _registry it in ShapeFactory, last i create and draw a Triangle.And it run
-    # successfully.
+    

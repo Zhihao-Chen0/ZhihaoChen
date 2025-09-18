@@ -1,3 +1,15 @@
+"""
+Design Explanation:
+
+This program uses two design patterns: Factory and Singleton.
+
+The Factory Pattern helps create different payment method objects based on a string input, 
+such as "paypal" or "credit_card". This makes the code easy to extend when adding new payment types.
+
+The Singleton Pattern is used in the PaymentGateway class. It ensures that only one gateway object 
+is created and shared in the system. This helps keep the payment process organized and consistent.
+"""
+
 from abc import ABC, abstractmethod
 
 # Abstract Base Class for Payment Methods   

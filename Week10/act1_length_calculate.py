@@ -11,7 +11,7 @@ class LengthAnalyzer:
         """ Returns the total length of the text """
         if isinstance(self.text, str):
             return len(self.text)
-        elif isinstance(self.text, list):
+        if isinstance(self.text, list):
             return sum(len(item) for item in self.text)
         return 0
 
@@ -19,7 +19,7 @@ class LengthAnalyzer:
         """ Counts the number of uppercase letters in the text """
         if isinstance(self.text, str):
             return sum(1 for char in self.text if char.isupper())
-        elif isinstance(self.text, list):
+        if isinstance(self.text, list):
             return sum(sum(1 for char in item if char.isupper()) for item in self.text)
         return 0
 

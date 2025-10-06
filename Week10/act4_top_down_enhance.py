@@ -41,8 +41,7 @@ class TicTacToe:
                 self.player2.symbol = "O" if symbol == 'X' else "X"
                 self.current_player = self.player1
                 break
-            else:
-                print("Invalid choice. Please choose 'X' or 'O'.")
+            print("Invalid choice. Please choose 'X' or 'O'.")
 
     def switch_player(self):
         """Switch the current player."""
@@ -84,14 +83,14 @@ class TicTacToe:
             print(f"Time left: {remaining} seconds", end='\r')
             time.sleep(1)
 
-        print(' ' * 30, end='\r')  # Clear the line    
+        print(' ' * 30, end='\r')  # Clear the line
         thread.join(0.1)
 
         if user_input[0] is not None:
             return user_input[0]
         print("Time's up! You missed your turn.")
         return None
-        
+  
     def check_winner(self):
         """Check if there's a winner."""
         winning_combinations = [
@@ -113,12 +112,14 @@ class TicTacToe:
         print("Welcome to the 2 Player Top Down Game!")
         self.display_board()
         self.choose_symbol()
-        print(f"{self.player1.name} is {self.player1.symbol} | {self.player2.name} is {self.player2.symbol}")
+        print(f"{self.player1.name} is {self.player1.symbol} | "
+              f"{self.player2.name} is {self.player2.symbol}")
 
         while True:
             try:
                 print(f"{self.current_player.name}'s turn ({self.current_player.symbol})")
-                move = self.timed_input(f"{self.current_player.name}, enter your move (1-9): ", timeout=10)
+                move = self.timed_input(f"{self.current_player.name}, "
+                                        f"enter your move (1-9): ", timeout=10)
                 if move is None:
                     print(f"{self.current_player.name} missed the turn!")
                     self.switch_player()

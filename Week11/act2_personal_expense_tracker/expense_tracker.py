@@ -58,6 +58,7 @@ class ExpenseTracker:
             return
 
         # Table header
+        print("\nExpense Tracker")
         print("+----+----------+----------------+---------------------------+")
         print("| No |  Amount  |    Category    |        Description        |")
         print("+----+----------+----------------+---------------------------+")

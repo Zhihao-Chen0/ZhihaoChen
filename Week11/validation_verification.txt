@@ -1,0 +1,50 @@
+Project Title: Community Events Hub
+Group Name: Group P
+Team Members: Xinyuan Hu, Zhihao Chen
+
+===========================
+Functional Requirements:
+===========================
+1. User registration and login/logout system ................................. ✔️
+2. Create new events (title, location, time, description, tag) .............. ✔️
+3. Join events .............................................................. ✔️
+4. View upcoming events sorted by time ...................................... (Optional)
+5. View detailed event page ................................................. ✔️
+6. Filter events by cultural tag (European, Māori, Pacific Peoples, Asian, MELAA) ...❌
+7. View Māori events on a dedicated calendar page ........................... ✔️
+8. View events by map on mobile client ...................................... ❌ (pending)
+9. Add comments to events on mobile version ................................. ✔️
+
+===========================
+Non-Functional Requirements:
+===========================
+1. Performance:
+   - The system loads quickly and remains responsive using Bootstrap-based layouts. ✔️
+
+2. Scalability:
+   - Architecture allows scaling through database and backend service upgrades. ✔️
+
+3. Security:
+   - HTTPS encryption ensures secure data transmission on both mobile and web.
+   - Passwords are securely hashed using Werkzeug. ✔️
+
+4. Usability:
+   - Interface is organized around key functions and tags to match user habits. ✔️
+
+5. Reliability:
+   - Flask and SQLAlchemy offer consistent performance and error handling. ✔️
+
+6. Maintainability:
+   - Modular design via Flask Blueprints and Jinja templates; mobile uses React Native. ✔️
+
+7. Portability:
+   - Python Flask backend and React Native frontend support iOS and Android. ✔️
+
+===========================
+Summary:
+===========================
+✔️ Passed: 13
+❌ Not Passed Yet: 3
+🔄 Pending Feature: Edit/Delete events by creator (in development)
+
+All implemented functional and non-functional requirements have been tested and verified.

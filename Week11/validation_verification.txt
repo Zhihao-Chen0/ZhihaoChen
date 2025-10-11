@@ -43,8 +43,5 @@ Non-Functional Requirements:
 ===========================
 Summary:
 ===========================
-✔️ Passed: 13
-❌ Not Passed Yet: 3
-🔄 Pending Feature: Edit/Delete events by creator (in development)
-
-All implemented functional and non-functional requirements have been tested and verified.
+✔️ Passed: 14
+❌ Pending: 2

@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=['GET', 'POST'])
 def convert_temperature():
-    result = ""
+    result = None
     temp = None
     original_unit = None
     target_unit = None

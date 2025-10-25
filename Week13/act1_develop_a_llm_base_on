@@ -1,0 +1,40 @@
+import google.generativeai as genai
+import os
+genai.configure(api_key="AIzaSyAWWI0k2D3fkyeHT4_lsU4apkqqY9Fwhk0")
+
+def instructor_chatbot():
+    """Common-line AI Itinerary Chatbot"""
+    print("Welcome to the Instructor Chatbot!\n")
+    print("You can ask me questions about the course, assignments, or any related topics.")
+    print("Type 'exit' to end the chat.\n")
+
+    days = input("How many days is your trip? ")
+    location = input("What is your destination? (city name) ")
+    age = input("What is your age? ")
+    theme = input("What theme would you like for your trip? (e.g., nature, modern city, cultural) ")
+
+    # Construct the prompt for the Gemini model
+    prompt = f"""
+    You are an expert travel itinerary planner. Create a detailed itinerary for a trip based on the following information:
+    use details below to create a personalized travel plan.
+    - Duration: {days} days
+    - Destination: {location}
+    - Traveler's Age: {age}
+    - Theme: {theme}
+
+    Based on this information, provide a day-by-day itinerary with activities, places to visit, addresses, short descriptions,
+    prices for each day seperately in order with maximum three activities per day.
+    """
+
+    try:
+        model = genai.GenerativeModel(model_name="gemini-2.5-pro") 
+        response = model.generate_content(prompt)
+
+        print("\nHere is your personalized travel itinerary:\n")
+        print(response.text)
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+if __name__ == "__main__":
+    instructor_chatbot()
